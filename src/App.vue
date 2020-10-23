@@ -1,19 +1,58 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+  <div id="app" v-cloak>
+    <vue-scroll>
+      <Header/>
+      <Banner/>
+      <router-view class="router-view"/>
+    </vue-scroll>
+    <Background ref="background"/>
   </div>
 </template>
 
+<script>
+  export default {
+    components: {
+      Header: () => import('@components/app/Header.vue'),
+      Banner: () => import('@components/app/Banner.vue'),
+      Background: () => import('@components/app/Background.vue')
+    },
+    provide() {
+      return {
+        changeBackground: this.changeBackground
+      }
+    },
+    data() {
+      return {}
+    },
+    methods: {
+      changeBackground(value) {
+        this.$refs.background.change(value)
+      }
+    }
+  }
+</script>
+
 <style lang="stylus">
-#app
-  font-family Avenir, Helvetica, Arial, sans-serif
-  -webkit-font-smoothing antialiased
-  -moz-osx-font-smoothing grayscale
-  text-align center
-  color #2c3e50
-  margin-top 60px
+  .v-cloak {
+    display: none;
+  }
+  #app {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    
+    .header {
+      flex-shrink: 0;
+    }
+    
+    .banner {
+      flex-shrink: 0;
+    }
+    
+    .router-view {
+      flex-shrink: 0;
+      flex-grow: 1;
+    }
+  }
 </style>

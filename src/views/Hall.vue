@@ -1,12 +1,10 @@
 <template>
-  <div class="home">
-    home
-  </div>
+  <div class="">hall</div>
 </template>
 
 <script>
   export default {
-    name: 'Home',
+    name: 'Hall',
     data() {
       return {}
     }
@@ -14,8 +12,5 @@
 </script>
 
 <style lang="stylus" scoped>
-  .home {
-    height: 1000px;
-    color: $primary-color;
-  }
+
 </style>
