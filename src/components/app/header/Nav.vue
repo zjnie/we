@@ -1,9 +1,9 @@
 <template>
   <ul class="nav">
-    <li class="nav-item">菜单一</li>
-    <li class="nav-item">菜单二</li>
-    <li class="nav-item">菜单三</li>
-    <li class="nav-item">菜单四</li>
+    <li class="nav-item">首页</li>
+    <li class="nav-item">Demo</li>
+    <li class="nav-item">文章</li>
+    <li class="nav-item">日志分析</li>
   </ul>
 </template>
 
@@ -26,7 +26,6 @@
       align-items: center;
       margin-right: 20px;
       cursor: pointer;
-      color: $primary-color;
     }
   }
 </style>

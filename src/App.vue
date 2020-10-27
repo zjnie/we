@@ -1,15 +1,16 @@
 <template>
   <div id="app" v-cloak>
-    <vue-scroll>
       <Header/>
-      <Banner/>
+      <!--<Banner/>-->
       <router-view class="router-view"/>
-    </vue-scroll>
     <Background ref="background"/>
   </div>
 </template>
 
 <script>
+  import Vue from 'vue'
+  import Monitor from '@utils/monitor.js'
+  
   export default {
     components: {
       Header: () => import('@components/app/Header.vue'),
@@ -18,7 +19,8 @@
     },
     provide() {
       return {
-        changeBackground: this.changeBackground
+        changeBackground: this.changeBackground,
+        monitor: new Monitor(Vue)
       }
     },
     data() {

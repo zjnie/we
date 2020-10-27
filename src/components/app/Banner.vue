@@ -1,6 +1,6 @@
 <template>
   <div class="banner">
-    <!--<img class="banner-img" :src="bannerSrc"/>-->
+    <img class="banner-img" src="assets/banner2.jpg" @click="handleError"/>
   </div>
 </template>
 
@@ -11,6 +11,9 @@
       return {
         bannerSrc: require('@assets/banner.jpg')
       }
+    },
+    methods: {
+      handleError() {}
     }
   }
 </script>

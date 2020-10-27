@@ -15,7 +15,7 @@
     },
     data() {
       return {
-        value: 'RGBA(255,0,0,1)'
+        value: 'RGBA(31,11,179,1)'
       }
     },
     watch: {

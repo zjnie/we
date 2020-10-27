@@ -21,14 +21,14 @@
           },
           'StarSky': {
             constructor: StarSky,
-            params: [150]
+            params: [300, 5]
           }
         },
         value: 'Particle'
       }
     },
     mounted() {
-      this.init()
+      // this.init()
     },
     methods: {
       init() {

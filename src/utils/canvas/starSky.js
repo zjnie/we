@@ -21,8 +21,8 @@ StarSky.prototype.init = function() {
 StarSky.prototype.create = function(number = this.number) {
   let x, y, distanceX, distanceY, hypotenuse, i = 0
   while (i < number) {
-    x = Math.ceil(Math.random() * this.canvasWidth / 2) + this.canvasWidth / 4
-    y = Math.ceil(Math.random() * this.canvasHeight / 2) + this.canvasHeight / 4
+    x = Math.ceil(Math.random() * this.canvasWidth)
+    y = Math.ceil(Math.random() * this.canvasHeight)
     distanceX = x - this.centerX
     distanceY = y - this.centerY
     hypotenuse = Math.sqrt(Math.pow(distanceX, 2) + Math.pow(distanceY, 2))
@@ -53,7 +53,7 @@ StarSky.prototype.update = function() {
 StarSky.prototype.render = function() {
   this.points.forEach(point => {
     this.ctx.beginPath()
-    this.ctx.arc(point.x, point.y, Math.min(this.f / point.z, 10), 0, 2 * Math.PI)
+    this.ctx.arc(point.x, point.y, 1, 0, 2 * Math.PI)
     this.ctx.fillStyle = '#fff'
     this.ctx.fill()
     this.ctx.strokeStyle = '#fff'
