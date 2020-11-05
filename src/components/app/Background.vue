@@ -5,8 +5,8 @@
 </template>
 
 <script>
-  import Particle from '@utils/canvas/particle.js'
-  import StarSky from '@utils/canvas/starSky.js'
+  import Particle from '@libs/canvas/particle'
+  import StarSky from '@libs/canvas/starSky'
   
   export default {
     name: 'Background',

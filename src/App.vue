@@ -9,7 +9,7 @@
 
 <script>
   import Vue from 'vue'
-  import Monitor from '@utils/monitor.js'
+  import Monitor from '@libs/monitor'
   
   export default {
     components: {
@@ -20,7 +20,7 @@
     provide() {
       return {
         changeBackground: this.changeBackground,
-        monitor: new Monitor(Vue)
+        // monitor: new Monitor(Vue)
       }
     },
     data() {
@@ -38,6 +38,7 @@
   .v-cloak {
     display: none;
   }
+  
   #app {
     position: relative;
     display: flex;

@@ -78,8 +78,9 @@
       }
     },
     watch: {
-      data() {
-        this.setScrollHeight()
+      data: {
+        handler: 'setScrollHeight',
+        immediate: true
       }
     },
     methods: {
@@ -125,6 +126,10 @@
       align-items: center;
       height: 70px;
       padding-top: 10px;
+      
+      .label {
+        line-height: 1;
+      }
       
       .input {
         width: 300px;

@@ -4,8 +4,15 @@ module.exports = {
   chainWebpack: config => {
     config.resolve.alias.set('@components', path.join(__dirname, 'src/components'))
     config.resolve.alias.set('@assets', path.join(__dirname, 'src/assets'))
-    config.resolve.alias.set('@utils', path.join(__dirname, 'src/utils'))
+    config.resolve.alias.set('@libs', path.join(__dirname, 'src/libs'))
     config.module.rule('stylus').oneOf('vue').use('vue-style-loader').loader('style-loader').options(
+      {
+        attributes: {
+          shinMark: true
+        }
+      }
+    )
+    config.module.rule('stylus').oneOf('normal').use('vue-style-loader').loader('style-loader').options(
       {
         attributes: {
           shinMark: true
@@ -21,6 +28,7 @@ module.exports = {
     }
   },
   devServer: {
-    hot: true
+    hot: true,
+    port: '9000'
   }
 }
