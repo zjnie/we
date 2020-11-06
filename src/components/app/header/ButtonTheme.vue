@@ -23,7 +23,7 @@
         newValue = this.colorToRgb(newValue)
         oldValue = this.colorToRgb(oldValue)
         const regExp = new RegExp(oldValue.replace(/(\(|\))/g, '\\$1'), 'ig')
-        const styles = document.querySelectorAll('style[shinMark]')
+        const styles = document.querySelectorAll('style[shinmark]')
         styles.forEach((item, index) => {
           item.innerHTML = item.innerHTML.replace(regExp, newValue)
         })

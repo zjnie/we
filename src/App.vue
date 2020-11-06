@@ -1,8 +1,8 @@
 <template>
   <div id="app" v-cloak>
-      <Header/>
-      <!--<Banner/>-->
-      <router-view class="router-view"/>
+    <Header/>
+    <!--<Banner/>-->
+    <router-view class="router-view"/>
     <Background ref="background"/>
   </div>
 </template>
@@ -20,7 +20,7 @@
     provide() {
       return {
         changeBackground: this.changeBackground,
-        // monitor: new Monitor(Vue)
+        monitor: new Monitor(Vue)
       }
     },
     data() {
@@ -30,11 +30,12 @@
       changeBackground(value) {
         this.$refs.background.change(value)
       }
+      
     }
   }
 </script>
 
-<style lang="stylus">
+<style lang="stylus" scoped>
   .v-cloak {
     display: none;
   }

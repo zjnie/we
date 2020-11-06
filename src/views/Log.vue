@@ -64,169 +64,171 @@
 </template>
 
 <script>
-  export default {
-    name: 'Log',
-    inject: ['monitor'],
-    data() {
-      return {
-        data: this.monitor.get()
-      }
-    },
-    computed: {
-      filterData() {
-        return this.data
-      }
-    },
-    watch: {
-      data: {
-        handler: 'setScrollHeight',
-        immediate: true
-      }
-    },
-    methods: {
-      setScrollHeight() {
-        this.$nextTick(() => {
-          const table_body_wrapper = this.$el.querySelector('.table-body-wrapper')
-          const table_body = this.$el.querySelector('.table-body')
-          table_body_wrapper.style.height = table_body.scrollHeight + 'px'
-        })
-      },
-      handleClearAll() {
-        this.monitor.clear()
-        this.data = []
-      },
-      handleDownload() {
-        const text = JSON.stringify(this.filterData)
-        const element = document.createElement('a')
-        element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text))
-        element.setAttribute('download', 'log.txt')
-        element.style.display = 'none'
-        document.body.appendChild(element)
-        element.click()
-        document.removeChild(element)
-      }
-    },
-    filters: {
-      timeFilter(time) {
-        const date = new Date(time)
-        return date.toLocaleDateString().replace(/\//g, '-') + '  ' + date.toTimeString().replace(/\s.+$/, '')
-      }
-    }
-  }
+	export default {
+		name: 'Log',
+		inject: ['monitor'],
+		data() {
+			return {
+				data: this.monitor.get()
+			}
+		},
+		computed: {
+			filterData() {
+				return this.data
+			}
+		},
+		watch: {
+			data: {
+				handler: 'setScrollHeight',
+				immediate: true
+			}
+		},
+		methods: {
+			aa() {
+			},
+			setScrollHeight() {
+				this.$nextTick(() => {
+					const table_body_wrapper = this.$el.querySelector('.table-body-wrapper')
+					const table_body = this.$el.querySelector('.table-body')
+					table_body_wrapper.style.height = table_body.scrollHeight + 'px'
+				})
+			},
+			handleClearAll() {
+				this.monitor.clear()
+				this.data = []
+			},
+			handleDownload() {
+				const text = JSON.stringify(this.filterData)
+				const element = document.createElement('a')
+				element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text))
+				element.setAttribute('download', 'log.txt')
+				element.style.display = 'none'
+				document.body.appendChild(element)
+				element.click()
+				document.removeChild(element)
+			}
+		},
+		filters: {
+			timeFilter(time) {
+				const date = new Date(time)
+				return date.toLocaleDateString().replace(/\//g, '-') + '  ' + date.toTimeString().replace(/\s.+$/, '')
+			}
+		}
+	}
 </script>
 
 <style lang="stylus" scoped>
-  .log {
-    width: 1200px;
-    height: 300px;
-    margin: 0 auto;
-    
-    .header {
-      display: flex;
-      align-items: center;
-      height: 70px;
-      padding-top: 10px;
-      
-      .label {
-        line-height: 1;
-      }
-      
-      .input {
-        width: 300px;
-        height: 32px;
-        padding: 0 10px;
-        border-radius: 4px;
-        border: 1px solid $border-color;
-        outline: none;
-      }
-      
-      .btn {
-        height: 32px;
-        padding: 0 20px;
-        margin-left: 20px;
-        background-color: $primary-color;
-        color: #fff;
-      }
-    }
-    
-    .body {
-      height: calc(100% - 70px);
-      padding-bottom: 30px;
-  
-      .table-header-wrapper {
-        height: 48px;
-        border: 1px solid $border-color;
-        border-radius: 4px 4px 0 0;
-        background-color: #f5f5f5;
-  
-        .table-header {
-          width: 100%;
-          height: 100%;
-          table-layout: fixed;
-          border-collapse: collapse;
-          font-size: 14px;
-    
-          .row {
-            .column {
-              border-right: 1px solid $border-color;
-              
-              &:last-child {
-                border-right: none;
-              }
-        
-              .cell {
-                padding: 10px;
-              }
-            }
-          }
-        }
-      }
-  
-      .table-body-wrapper {
-        max-height: calc(100% - 48px);
-        min-height: 40px;
-        overflow: hidden;
-        border: 1px solid $border-color;
-        border-top: none;
-        border-radius: 0 0 4px 4px;
-        box-sizing: content-box;
-  
-        .table-body {
-          width: 100%;
-          table-layout: fixed;
-          border-collapse: collapse;
-    
-          .row {
-            height: 48px;
-      
-            .column {
-              border-right: 1px solid $border-color;
-              border-bottom: 1px solid $border-color;
-              
-              &:last-child {
-                border-right: none;
-              }
-        
-              .cell {
-                padding: 10px;
-                word-break: break-word;
-              }
-            }
-          }
-    
-          .row:last-of-type {
-            .column {
-              border-bottom: none;
-            }
-          }
-        }
-        
-        .empty {
-          padding: 10px;
-          font-size: 14px;
-          text-align: center;
-        }
-      }
-    }
-  }
+	.log {
+		width: 1200px;
+		height: 300px;
+		margin: 0 auto;
+		
+		.header {
+			display: flex;
+			align-items: center;
+			height: 70px;
+			padding-top: 10px;
+			
+			.label {
+				line-height: 1;
+			}
+			
+			.input {
+				width: 300px;
+				height: 32px;
+				padding: 0 10px;
+				border-radius: 4px;
+				border: 1px solid $border-color;
+				outline: none;
+			}
+			
+			.btn {
+				height: 32px;
+				padding: 0 20px;
+				margin-left: 20px;
+				background-color: $primary-color;
+				color: #fff;
+			}
+		}
+		
+		.body {
+			height: calc(100% - 70px);
+			padding-bottom: 30px;
+			
+			.table-header-wrapper {
+				height: 48px;
+				border: 1px solid $border-color;
+				border-radius: 4px 4px 0 0;
+				background-color: #f5f5f5;
+				
+				.table-header {
+					width: 100%;
+					height: 100%;
+					table-layout: fixed;
+					border-collapse: collapse;
+					font-size: 14px;
+					
+					.row {
+						.column {
+							border-right: 1px solid $border-color;
+							
+							&:last-child {
+								border-right: none;
+							}
+							
+							.cell {
+								padding: 10px;
+							}
+						}
+					}
+				}
+			}
+			
+			.table-body-wrapper {
+				max-height: calc(100% - 48px);
+				min-height: 40px;
+				overflow: hidden;
+				border: 1px solid $border-color;
+				border-top: none;
+				border-radius: 0 0 4px 4px;
+				box-sizing: content-box;
+				
+				.table-body {
+					width: 100%;
+					table-layout: fixed;
+					border-collapse: collapse;
+					
+					.row {
+						height: 48px;
+						
+						.column {
+							border-right: 1px solid $border-color;
+							border-bottom: 1px solid $border-color;
+							
+							&:last-child {
+								border-right: none;
+							}
+							
+							.cell {
+								padding: 10px;
+								word-break: break-word;
+							}
+						}
+					}
+					
+					.row:last-of-type {
+						.column {
+							border-bottom: none;
+						}
+					}
+				}
+				
+				.empty {
+					padding: 10px;
+					font-size: 14px;
+					text-align: center;
+				}
+			}
+		}
+	}
 </style>
