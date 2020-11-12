@@ -1,6 +1,6 @@
 <template>
   <div class="article">
-    <iframe class="iframe" src="./gitbook/_book/index.html"></iframe>
+    <iframe class="iframe" src="./gitbook/book/index.html"></iframe>
   </div>
 </template>
 
