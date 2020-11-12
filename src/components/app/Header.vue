@@ -2,7 +2,7 @@
   <div class="header">
     <Nav/>
     <ButtonTheme/>
-    <ButtonBackground/>
+<!--    <ButtonBackground/>-->
   </div>
 </template>
 

@@ -62,6 +62,7 @@
     display: flex;
     align-items: center;
     margin-left: 30px;
+    margin-right: 200px;
     padding-right: 16px;
     height: 100%;
     cursor: pointer;

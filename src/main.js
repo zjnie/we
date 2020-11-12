@@ -21,3 +21,15 @@ new Vue({
   store,
   render: h => h(App)
 }).$mount('#app')
+
+
+// const promise = new Promise((resolve, reject) => {
+//   resolve(1)
+// })
+// const promise2 = new Promise((resolve, reject) => {
+// 	resolve(2)
+// })
+//
+// promise.then(promise2)
+
+import '@libs/promiseDemo'

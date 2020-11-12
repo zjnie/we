@@ -84,8 +84,6 @@
 			}
 		},
 		methods: {
-			aa() {
-			},
 			setScrollHeight() {
 				this.$nextTick(() => {
 					const table_body_wrapper = this.$el.querySelector('.table-body-wrapper')
