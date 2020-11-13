@@ -41,7 +41,7 @@
               <col width="200"/>
               <col width="100"/>
             </colgroup>
-            <tr v-for="item in filterData" :key="item.time" class="row">
+            <tr v-for="(item, index) in filterData" :key="item.time + index" class="row">
               <td class="column">
                 <div class="cell">{{ item.time | timeFilter }}</div>
               </td>

@@ -1,9 +1,9 @@
 <template>
   <div id="app" v-cloak>
-    <Header/>
+    <Header />
     <!--<Banner/>-->
-    <router-view class="router-view"/>
-    <Background ref="background"/>
+    <router-view class="router-view" />
+    <Background ref="background" />
   </div>
 </template>
 
