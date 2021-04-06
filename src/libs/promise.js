@@ -1,75 +1,129 @@
-class Promise {
+class _Promise {
   constructor(fn) {
-    let status = 'pending'
-    let value = null
-    let error = null
-    let callbacks = []
+      let callbacks = []
+      let status = 'pending'
+      let value = ''
+      let error = ''
+    
+      this.then = function(resFn, errFn) {
+        return new _Promise((resolve, reject) => {
+          handle({
+            resFn: resFn,
+            errFn: errFn,
+            resolve: resolve,
+            reject: reject
+          })
+        })
+      }
+    
+      this.catch = function(errFn) {
+        this.then(null, errFn)
+      }
+    
+      const resolve = function(newValue) {
+        if (status !== 'pending') return
+        if (newValue && newValue instanceof _Promise) {
+          newValue.then(resolve, reject)
+          return
+        }
+      
+        status = 'fulfilled'
+        value = newValue
+      
+        setTimeout(() => {
+          callbacks.forEach(callback => {
+            handle(callback)
+          })
+        })
+      }
+    
+      const reject = function(newError) {
+        if (status !== 'pending') return
+        if (newError && newError instanceof _Promise) {
+          newError.then(resolve)
+          return
+        }
+      
+        status = 'rejected'
+        error = newError
+      
+        setTimeout(() => {
+          callbacks.forEach(callback => {
+            handle(callback)
+          })
+        })
+      }
+    
+      const handle = function(callback) {
+        if (status === 'pending') {
+          callbacks.push(callback)
+        }
+        try {
+        
+          if (status === 'fulfilled') {
+            if (callback.resFn instanceof Function) {
+              let result = callback.resFn(value)
+              callback.resolve(result)
+            }
+            else {
+              callback.resolve(value)
+            }
+          }
+        
+          if (status === 'rejected') {
+            if (callback.errFn instanceof Function) {
+              let result = callback.errFn(error)
+              callback.resolve(result)
+            }
+            else {
+              callback.reject(error)
+            }
+          }
+        }
+        catch(err) {
+          callback.reject(err)
+        }
+      }
+    
+      fn(resolve, reject)
+    }
   
-    this.then = function(fnRes, fnErr) {
-      return new Promise(resolve => {
-        thenHandle({
-          fnRes: fnRes || null,
-          fnErr: fnErr || null,
-          resolve: resolve
+    static all(promiseArr) {
+      let result = []
+      return new _Promise(resolve => {
+        promiseArr.forEach((promise, index) => {
+          promise.then(res => {
+            result.push(res())
+            if (result.length === promiseArr.length) {
+              resolve(result)
+            }
+          })
         })
       })
     }
-    
-    function thenHandle(callback) {
-      if (status === 'pending') {
-        return callbacks.push(callback)
-      }
-      if (!callback.fnRes) {
-        return callback.resolve()
-      }
-      const result = callback.fnRes(value)
-      callback.resolve(result)
-    }
   
-    function resolveHandle(callback) {
-      if (!callback.fnRes) {
-        return callback.resolve()
-      }
-      const result = callback.fnRes(value)
-      callback.resolve(result)
-    }
-  
-    function resolve(newValue) {
-      if (typeof newValue === 'function') {
-        newValue = newValue()
-      }
-      if (newValue && typeof newValue === 'object') {
-        if (typeof newValue.then === 'function') {
-          return newValue.then(resolve)
-        }
-      }
-      status = 'fulfilled'
-      value = newValue
-      setTimeout(() => {
-        callbacks.forEach(callback => {
-          resolveHandle(callback)
+    static race(promiseArr) {
+      return new _Promise(resolve => {
+        promiseArr.forEach((promise, index) => {
+          promise.then(res => {
+            resolve(res())
+          })
         })
-      }, 0)
+      })
     }
   
-    function reject(newError) {
-      status = 'rejected'
-      error = newError
-      setTimeout(() => {
-        callbacks.forEach(callback => {
-          resolveHandle(callback)
-        })
-      }, 0)
+    static resolve(value) {
+      return new _Promise(resolve => {
+        resolve(value)
+      })
     }
   
-    fn(resolve, reject)
-  }
-  catch() {}
-  static all() {}
-  static race() {}
-  static resolve() {}
-  static reject() {}
+    static reject(error) {
+      return new _Promise((resolve, reject) => {
+        reject(error)
+      })
+    }
 }
 
-export default Promise
+export default _Promise
 

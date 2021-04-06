@@ -1,7 +1,7 @@
 <template>
   <div class="image-wall">
     <div class="container">
-      <div v-for="image in images" :key="image" class="item">
+      <div v-for="image in images" :key="image.src" class="item">
         <img
           class="image"
           :style="image.style"
@@ -21,10 +21,10 @@
       }
     },
     created() {
-      const files = require.context('../../../public/img/image-wall/', false, /\.(png|jpg|jpeg)$/)
+      const files = require.context('@assets/image-wall/', false, /\.(png|jpg|jpeg)$/)
       this.images = files.keys().map(key => {
         return {
-          src: key.replace('./', 'img/image-wall/'),
+          src: require('@assets/image-wall/' + key.replace('./', '')),
           style: {
             top: Math.random() * 100 - 50 + 'px',
             left: Math.random() * 30 - 15 + 'px',

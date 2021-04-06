@@ -1,0 +1,167 @@
+
+ WARNING  Compiled with 1 warnings17:22:31
+
+ warning  
+
+asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  gitbook/_book/book/gitbook/fonts/fontawesome/fontawesome-webfont.svg (382 KiB)
+  gitbook/_book/gitbook/fonts/fontawesome/fontawesome-webfont.svg (382 KiB)
+  gitbook/book/gitbook/fonts/fontawesome/fontawesome-webfont.svg (382 KiB)
+
+  File                                      Size             Gzipped
+
+  dist\gitbook\_book\book\gitbook\gitboo    14.65 KiB        4.73 KiB
+  k-plugin-lunr\lunr.min.js
+  dist\gitbook\_book\book\gitbook\gitboo    14.65 KiB        4.73 KiB
+  k-plugin-search\lunr.min.js
+  dist\gitbook\_book\gitbook\gitbook-plu    14.65 KiB        4.73 KiB
+  gin-lunr\lunr.min.js
+  dist\gitbook\_book\gitbook\gitbook-plu    14.65 KiB        4.73 KiB
+  gin-search\lunr.min.js
+  dist\gitbook\book\gitbook\gitbook-plug    14.65 KiB        4.73 KiB
+  in-lunr\lunr.min.js
+  dist\gitbook\book\gitbook\gitbook-plug    14.65 KiB        4.73 KiB
+  in-search\lunr.min.js
+  dist\js\chunk-vendors.2b65a7b7.js         206.12 KiB       68.33 KiB
+  dist\gitbook\_book\book\gitbook\theme.    110.61 KiB       38.87 KiB
+  js
+  dist\gitbook\_book\gitbook\theme.js       110.61 KiB       38.87 KiB
+  dist\gitbook\book\gitbook\theme.js        110.61 KiB       38.87 KiB
+  dist\gitbook\_book\book\gitbook\gitboo    102.93 KiB       36.19 KiB
+  k.js
+  dist\gitbook\_book\gitbook\gitbook.js     102.93 KiB       36.19 KiB
+  dist\gitbook\book\gitbook\gitbook.js      102.93 KiB       36.19 KiB
+  dist\js\chunk-04df1c0c.5b2b8af8.js        16.37 KiB        6.03 KiB
+  dist\js\chunk-98fcf7de.01be5a61.js        16.05 KiB        6.30 KiB
+  dist\js\main.bee45707.js                  6.73 KiB         3.06 KiB
+  dist\gitbook\_book\book\gitbook\gitboo    6.30 KiB         1.51 KiB
+  k-plugin-fontsettings\fontsettings.js
+  dist\gitbook\_book\gitbook\gitbook-plu    6.30 KiB         1.51 KiB
+  gin-fontsettings\fontsettings.js
+  dist\gitbook\book\gitbook\gitbook-plug    6.30 KiB         1.51 KiB
+  in-fontsettings\fontsettings.js
+  dist\gitbook\_book\book\gitbook\gitboo    6.22 KiB         1.82 KiB
+  k-plugin-search\search.js
+  dist\gitbook\_book\gitbook\gitbook-plu    6.22 KiB         1.82 KiB
+  gin-search\search.js
+  dist\gitbook\book\gitbook\gitbook-plug    6.22 KiB         1.82 KiB
+  in-search\search.js
+  dist\js\chunk-55f6ca9e.66f32008.js        5.30 KiB         1.78 KiB
+  dist\js\chunk-034a4e1a.43bcfd20.js        4.76 KiB         1.94 KiB
+  dist\js\chunk-8d1896fe.d2e795ab.js        3.29 KiB         1.30 KiB
+  dist\gitbook\_book\book\gitbook\gitboo    2.81 KiB         0.73 KiB
+  k-plugin-sharing\buttons.js
+  dist\gitbook\_book\gitbook\gitbook-plu    2.81 KiB         0.73 KiB
+  gin-sharing\buttons.js
+  dist\gitbook\book\gitbook\gitbook-plug    2.81 KiB         0.73 KiB
+  in-sharing\buttons.js
+  dist\js\chunk-5471d366.438ca66e.js        2.53 KiB         0.99 KiB
+  dist\js\chunk-d00f93c8.041f8175.js        2.32 KiB         1.04 KiB
+  dist\gitbook\_book\book\gitbook\gitboo    2.01 KiB         0.74 KiB
+  k-plugin-expandable-chapters-small\exp
+  andable-chapters-small.js
+  dist\gitbook\_book\gitbook\gitbook-plu    2.01 KiB         0.74 KiB
+  gin-expandable-chapters-small\expandab
+  le-chapters-small.js
+  dist\gitbook\book\gitbook\gitbook-plug    2.01 KiB         0.74 KiB
+  in-expandable-chapters-small\expandabl
+  e-chapters-small.js
+  dist\gitbook\node_modules\gitbook-plug    2.01 KiB         0.74 KiB
+  in-expandable-chapters-small\book\expa
+  ndable-chapters-small.js
+  dist\gitbook\_book\book\gitbook\gitboo    1.96 KiB         0.75 KiB
+  k-plugin-expandable-chapters\expandabl
+  e-chapters.js
+  dist\gitbook\_book\gitbook\gitbook-plu    1.96 KiB         0.75 KiB
+  gin-expandable-chapters\expandable-cha
+  pters.js
+  dist\gitbook\book\gitbook\gitbook-plug    1.96 KiB         0.75 KiB
+  in-expandable-chapters\expandable-chap
+  ters.js
+  dist\gitbook\node_modules\gitbook-plug    1.96 KiB         0.75 KiB
+  in-expandable-chapters\book\expandable
+  -chapters.js
+  dist\gitbook\_book\book\gitbook\gitboo    1.58 KiB         0.60 KiB
+  k-plugin-lunr\search-lunr.js
+  dist\gitbook\_book\gitbook\gitbook-plu    1.58 KiB         0.60 KiB
+  gin-lunr\search-lunr.js
+  dist\gitbook\book\gitbook\gitbook-plug    1.58 KiB         0.60 KiB
+  in-lunr\search-lunr.js
+  dist\js\chunk-2fe6b965.8717daa7.js        1.55 KiB         0.74 KiB
+  dist\js\chunk-fd8b8c1c.b3df8359.js        1.39 KiB         0.81 KiB
+  dist\gitbook\_book\book\gitbook\gitboo    1.24 KiB         0.44 KiB
+  k-plugin-search\search-engine.js
+  dist\gitbook\_book\gitbook\gitbook-plu    1.24 KiB         0.44 KiB
+  gin-search\search-engine.js
+  dist\gitbook\book\gitbook\gitbook-plug    1.24 KiB         0.44 KiB
+  in-search\search-engine.js
+  dist\js\chunk-37372a08.2b532e09.js        1.14 KiB         0.66 KiB
+  dist\js\chunk-18d0d98c.8f253cc1.js        1.09 KiB         0.67 KiB
+  dist\js\chunk-0eabac5b.6525974e.js        1.01 KiB         0.62 KiB
+  dist\js\chunk-e116d712.7d857ec7.js        0.81 KiB         0.51 KiB
+  dist\gitbook\_book\gitbook\gitbook-plu    0.32 KiB         0.22 KiB
+  gin-livereload\plugin.js
+  dist\gitbook\node_modules\gitbook-plug    0.25 KiB         0.15 KiB
+  in-expandable-chapters-small\index.js
+  dist\gitbook\node_modules\gitbook-plug    0.23 KiB         0.14 KiB
+  in-expandable-chapters\index.js
+  dist\gitbook\_book\book\gitbook\style.    51.47 KiB        10.50 KiB
+  css
+  dist\gitbook\_book\gitbook\style.css      51.47 KiB        10.50 KiB
+  dist\gitbook\book\gitbook\style.css       51.47 KiB        10.50 KiB
+  dist\gitbook\_book\book\gitbook\gitboo    30.71 KiB        2.19 KiB
+  k-plugin-highlight\website.css
+  dist\gitbook\_book\gitbook\gitbook-plu    30.71 KiB        2.19 KiB
+  gin-highlight\website.css
+  dist\gitbook\book\gitbook\gitbook-plug    30.71 KiB        2.19 KiB
+  in-highlight\website.css
+  dist\gitbook\_book\book\gitbook\gitboo    8.39 KiB         1.15 KiB
+  k-plugin-fontsettings\website.css
+  dist\gitbook\_book\gitbook\gitbook-plu    8.39 KiB         1.15 KiB
+  gin-fontsettings\website.css
+  dist\gitbook\book\gitbook\gitbook-plug    8.39 KiB         1.15 KiB
+  in-fontsettings\website.css
+  dist\gitbook\_book\book\gitbook\gitboo    2.80 KiB         0.73 KiB
+  k-plugin-highlight\ebook.css
+  dist\gitbook\_book\gitbook\gitbook-plu    2.80 KiB         0.73 KiB
+  gin-highlight\ebook.css
+  dist\gitbook\book\gitbook\gitbook-plug    2.80 KiB         0.73 KiB
+  in-highlight\ebook.css
+  dist\gitbook\_book\book\gitbook\gitboo    0.95 KiB         0.32 KiB
+  k-plugin-search\search.css
+  dist\gitbook\_book\gitbook\gitbook-plu    0.95 KiB         0.32 KiB
+  gin-search\search.css
+  dist\gitbook\book\gitbook\gitbook-plug    0.95 KiB         0.32 KiB
+  in-search\search.css
+  dist\gitbook\_book\book\gitbook\gitboo    0.57 KiB         0.24 KiB
+  k-plugin-expandable-chapters-small\exp
+  andable-chapters-small.css
+  dist\gitbook\_book\gitbook\gitbook-plu    0.57 KiB         0.24 KiB
+  gin-expandable-chapters-small\expandab
+  le-chapters-small.css
+  dist\gitbook\book\gitbook\gitbook-plug    0.57 KiB         0.24 KiB
+  in-expandable-chapters-small\expandabl
+  e-chapters-small.css
+  dist\gitbook\node_modules\gitbook-plug    0.57 KiB         0.24 KiB
+  in-expandable-chapters-small\book\expa
+  ndable-chapters-small.css
+  dist\gitbook\_book\book\gitbook\gitboo    0.55 KiB         0.24 KiB
+  k-plugin-expandable-chapters\expandabl
+  e-chapters.css
+  dist\gitbook\_book\gitbook\gitbook-plu    0.55 KiB         0.24 KiB
+  gin-expandable-chapters\expandable-cha
+  pters.css
+  dist\gitbook\book\gitbook\gitbook-plug    0.55 KiB         0.24 KiB
+  in-expandable-chapters\expandable-chap
+  ters.css
+  dist\gitbook\node_modules\gitbook-plug    0.55 KiB         0.24 KiB
+  in-expandable-chapters\book\expandable
+  -chapters.css
+
+  Images and other types of assets omitted.
+
+ DONE  Build complete. The dist directory is ready to be deployed.
+ INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
+      

@@ -1,0 +1,107 @@
+{
+  "id": "2460191",
+  "name": "we",
+  "font_family": "we",
+  "css_prefix_text": "we-",
+  "description": "个人网站",
+  "glyphs": [
+    {
+      "icon_id": "993792",
+      "name": "项目编号",
+      "font_class": "xiangmu",
+      "unicode": "e6ae",
+      "unicode_decimal": 59054
+    },
+    {
+      "icon_id": "1134328",
+      "name": "评价_sel",
+      "font_class": "pingjia",
+      "unicode": "e67c",
+      "unicode_decimal": 59004
+    },
+    {
+      "icon_id": "3979423",
+      "name": "教育",
+      "font_class": "jiaoyu",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "4066474",
+      "name": "工作统计_焦点",
+      "font_class": "gongzuojinli",
+      "unicode": "e624",
+      "unicode_decimal": 58916
+    },
+    {
+      "icon_id": "7588097",
+      "name": "工具",
+      "font_class": "jineng",
+      "unicode": "e61e",
+      "unicode_decimal": 58910
+    },
+    {
+      "icon_id": "1016750",
+      "name": "性别",
+      "font_class": "xinbie",
+      "unicode": "e6d6",
+      "unicode_decimal": 59094
+    },
+    {
+      "icon_id": "2187790",
+      "name": "定位",
+      "font_class": "xianju",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "2567864",
+      "name": "定位",
+      "font_class": "jiguan",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "3216580",
+      "name": "目标",
+      "font_class": "yixiang",
+      "unicode": "e681",
+      "unicode_decimal": 59009
+    },
+    {
+      "icon_id": "3483765",
+      "name": "邮箱",
+      "font_class": "youxiang",
+      "unicode": "e672",
+      "unicode_decimal": 58994
+    },
+    {
+      "icon_id": "18319237",
+      "name": "童装年龄段",
+      "font_class": "nianling",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
+      "icon_id": "633013",
+      "name": "姓名（收货地址）",
+      "font_class": "xinming",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    },
+    {
+      "icon_id": "11677460",
+      "name": "民族风-停止选中",
+      "font_class": "minzu",
+      "unicode": "e6f7",
+      "unicode_decimal": 59127
+    },
+    {
+      "icon_id": "947138",
+      "name": "电话",
+      "font_class": "dianhua",
+      "unicode": "e6a9",
+      "unicode_decimal": 59049
+    }
+  ]
+}

@@ -10,6 +10,7 @@
 html, body {
   width: 100%;
   height: 100%;
+  font-size: 14px;
 }
   
 ul {
@@ -28,4 +29,22 @@ button {
 a {
   text-decoration: none;
   color: #000;
+}
+
+.list-prefix {
+  position: relative;
+  padding-left: 20px;
+  line-height: 32px;
+  font-size: 14px;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #0ea391;
+  }
 }

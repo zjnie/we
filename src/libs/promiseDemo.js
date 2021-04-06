@@ -74,3 +74,17 @@ promise().then(res => {
 }).then(res => {
 	console.log(res)
 })
+
+// 实现步骤
+// 1.基本用法实现
+// 2.resolve同步调用
+// 3.then方法中不传参数，或者参数不是函数
+// 4.then方法异步调用
+// 5.链式调用
+// 6.链式调用中间then方法中不传参数，或者参数不是函数
+// 7.then回调函数return promise对象
+// 8.加入reject,catch
+// 9.实现静态方法resolve, reject, race, all
+// 10.catch和reject错误捕获的冒泡执行步骤
+
+

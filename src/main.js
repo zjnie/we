@@ -11,6 +11,7 @@ import './styles/global.styl'
 
 // 全局混入
 import global from '@libs/mixins/global'
+
 Vue.mixin(global)
 
 // 关闭生产环境的提示
@@ -21,3 +22,7 @@ new Vue({
   store,
   render: h => h(App)
 }).$mount('#app')
+
+
+let loader = require('@libs/loader.js')
+console.log(loader)

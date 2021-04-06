@@ -1,29 +1,20 @@
 <template>
   <div class="home">
-    <div class="parent">
-      <span>parent</span>
-      <div class="children width-100">
-        children
-        <div style="display: flex; background-color: red;">
-          <div style="flex-grow: 1">1</div>
-          <div style="flex-grow: 1">1</div>
-          <div style="flex-grow: 1">1</div>
-        </div>
+    <div class="select" tabindex="1">
+      <div class="select-inner">我是个select</div>
+      <div class="select-panel">
+        <div class="select-option">我是第一个选项</div>
+        <div class="select-option">我是第二个选项</div>
+        <div class="select-option">我是第三个选项</div>
+        <div class="select-option">我是第四个选项</div>
+        <div class="select-option">我是第五个选项</div>
       </div>
-      <p>width: 100%</p>
     </div>
-    <div class="parent">
-      <span>parent</span>
-      <div class="children width-auto">
-        children
-        <div style="display: flex; ">
-          <div style="flex-grow: 1; background-color: red; margin: 0 30px;">1</div>
-          <div style="flex-grow: 1; background-color: red; margin: 0 30px;">2</div>
-          <div style="flex-grow: 1; background-color: red; margin: 0 30px;">3</div>
-        </div>
-      </div>
-      <p>width: auto</p>
+    <div style="width: 50px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap">
+      <span style="color: red;">12222222222222</span>
+      <span>12222222222222</span>
     </div>
+    <img id="img" src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ae70d414c22a4a668b8da47e2296c10a~tplv-k3u1fbpfcp-watermark.image" />
   </div>
 </template>
 
@@ -32,53 +23,113 @@
     name: 'Home',
     data() {
       return {
-        text: ''
+        text: '我是个select'
       }
     },
     created() {
+    },
+    methods: {
+      a(t) {
+        this.text = t
+      }
     }
   }
 </script>
-
+<style lang="stylus">
+  /* Turn on a 13x13 scrollbar */
+  ::-webkit-scrollbar {
+    width: 7px;/*对垂直流动条有效*/
+    height: 10px;/*对水平流动条有效*/
+    border-radius:10px;
+  
+  }
+  
+  /* 垂直滚动条的滑动块 */
+  ::-webkit-scrollbar-thumb:vertical {
+    height: 50px;
+    background-color: #BDC3CB;
+    -webkit-border-radius: 6px;
+  }
+</style>
 <style lang="stylus" scoped>
   .home {
-    padding-left: 400px;
-    padding-top: 30px;
+    position: relative;
+    padding: 300px;
+    height: 100px;
+    overflow: auto;
     
-    .parent {
-      overflow: hidden;
+    .select {
       position: relative;
-      float: left;
-      width: 500px;
-      height: 250px;
-      margin-left: 100px;
-      padding-top: 10px;
-      background-color: tan;
-      text-align: center;
+      width: 250px;
+      font-size: 12px;
+      color: #606266;
+      outline: none;
       
-      .children {
-        margin: 10px -30px 0;
-        height: 150px;
-        text-align: center;
-        line-height: 50px;
-        background-color: #00CC66;
+      &:focus {
+        .select-inner {
+          border-color: #409eff;
+          
+          &::after {
+            transform: rotateZ(180deg)
+          }
+        }
+        
+        .select-panel {
+          transform: rotateX(0deg)
+        }
       }
       
-      .width-100 {
+      .select-inner {
         width: 100%;
+        height: 36px;
+        line-height: 34px;
+        padding: 0 30px 0 10px;
+        border-radius: 4px;
+        border: 1px solid #dcdfe6;
+        outline: none;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        cursor: pointer;
+        
+        &::after {
+          content: '';
+          position: absolute;
+          top: 15px;
+          right: 10px;
+          border: 6px solid #bbb;
+          border-top-width: 7px;
+          border-bottom: none;
+          border-left-color: transparent;
+          border-right-color: transparent;
+          transform: rotateZ(0deg)
+          transform-origin: center center;
+          transition: transform .2s;
+        }
       }
       
-      .width-auto {
-        width: auto;
-      }
-      
-      p {
+      .select-panel {
         position: absolute;
-        bottom: 0;
-        background-color: #fff;
+        top: 100%;
+        left: 0;
+        margin-top: 2px;
+        padding: 10px 0;
         width: 100%;
-        padding-top: 10px;
-        text-align: center;
+        border-radius: 4px;
+        box-shadow: 0 0 8px 0 rgba(0, 0, 0, .1);
+        transform: rotateX(90deg)
+        transform-origin: center 0;
+        transition: transform .2s;
+        
+        .select-option {
+          padding: 6px 10px;
+          cursor: pointer;
+          
+          &:hover {
+            color: #fff;
+            background-color: #409eff;
+          }
+        }
       }
     }
   }

@@ -1,4 +1,4 @@
-# 如何简单实现一个promise
+# Promise介绍及实现
 
 ## 什么是promise
 
@@ -14,7 +14,7 @@
 
 ## promise实现过程(为了演示只写resolve)
 
-先看一下promise的用法
+promise的基本用法
 
 ```
 const promise = function() {
