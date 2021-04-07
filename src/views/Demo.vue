@@ -1,9 +1,7 @@
 <template>
   <div class="demo">
-    <!--<ImageWall />-->
-    {{ Date.now() }}
-    <span v-for="item in arr2" :key="item.id">{{ item.value }}</span>
-    <Cube/>
+    <ImageWall />
+<!--    <Cube/>-->
   </div>
 </template>
 

@@ -84,8 +84,9 @@
   
   .photo {
     position: absolute;
-    top: 30px;
-    right: 0;
+    top: 10px;
+    right: 30px;
     width: 100px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1)
   }
 </style>

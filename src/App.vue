@@ -2,7 +2,9 @@
   <div id="app" v-cloak>
     <Header />
     <!--<Banner/>-->
-    <router-view class="router-view" />
+    <vue-scroll>
+      <router-view class="router-view" />
+    </vue-scroll>
     <Background ref="background" />
   </div>
 </template>
@@ -20,7 +22,7 @@
     provide() {
       return {
         changeBackground: this.changeBackground,
-      //  monitor: new Monitor(Vue)
+        monitor: new Monitor(Vue)
       }
     },
     data() {
@@ -54,8 +56,7 @@
       flex-shrink: 0;
     }
     
-    .router-view {
-      flex-shrink: 0;
+    & >>> .__vuescroll {
       flex-grow: 1;
     }
   }

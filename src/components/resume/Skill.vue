@@ -13,14 +13,16 @@
     data() {
       return {
         data: [
-          '精通Web(HTML/CSS/Javascript/H5/CSS3/ES6)、DOM、JQuery、JSON等前端技术',
-          '精通Vue框架',
+          '精通HTML、CSS、Javascript、H5、CSS3、ES6等前端技术',
+          '精通Vue框架以及基于Vue的第三方库，包括vuex、vue-router、view-ui、element-ui',
           '精通正则表达式',
-          '掌握Webpack打包配置',
-          '掌握移动端开发',
-          '掌握Http协议',
-          '了解基于Vue的服务器渲染',
-          '了解web常见安全问题，如XSS、DDOS、CSRF等'
+          '掌握Webpack打包工具',
+          '掌握jQuery、DOM、JSON、Echarts等技术',
+          '掌握H5以及uni-app进行移动端开发',
+          '掌握Http协议相关内容',
+          '掌握基于Vue的服务器渲染',
+          '掌握web常见安全问题，如XSS、DDOS、CSRF等',
+          '了解nodejs、shell、typescript、java、sql等其他技术'
         ]
       }
     }

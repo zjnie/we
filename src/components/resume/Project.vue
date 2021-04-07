@@ -31,22 +31,7 @@
             position: '前端开发工程师',
             desc: '解决不同终端类型应用的注册、接入、分配、授权、上下线、评价、意见反馈、数据采集的全生命周期管理，面向学校师生用户提供一站式线上服务大厅',
             technicals: [
-              'vue全家桶技术栈',
-              'postcss + flexible做移动端适配',
-              '使用require.js库加载第三方自定义卡片',
-              '通过webpack的style-loader配置实现换肤功能'
-            ]
-          },
-          {
-            time: '2019.05 - 2019.12',
-            project: '智控平台移动端',
-            position: '前端开发工程师',
-            desc: '智控平台是一个针对目标布控的管理平台，是由省厅推出的六智八慧项目中针对‘控’开发一个项目',
-            technicals: [
-              '使用vue、vuex、vue-router搭建基础框架',
-              '使用axios发送服务请求',
-              '使用webpack作为打包工具',
-              '使用sass作为预处理器'
+              'vue、vuex、vue-router、view-ui、vuescroll、axios、stylus、postcss、vue-i18n、require.js、webpack'
             ]
           },
           {
@@ -60,8 +45,7 @@
               形成全文检索、图谱分析、时空分析等各种可视化工具。
               通过人机结合模式，助力实战人员挖掘数据深层价值`,
             technicals: [
-              '使用react、redux、react-redux、react-router搭建框架',
-              '使用sass作为预处理器'
+              'react、redux、react-redux、react-router、sass、leaflet.js、sigma.js、immutable.js、webpack'
             ]
           },
           {
@@ -70,18 +54,16 @@
             position: '前端开发工程师',
             desc: '综合安防管理平台是给华为园区制定的一套园区智能管理系统，该系统涉及到人员布控、人脸识别、地图轨迹跟踪、视频实时监控、设备一键远程布防撤防等功能',
             technicals: [
-              '使用vue、vuex、vue-router搭建基础框架',
-              '使用axios发送服务请求'
+              'vue、vuex、vue-router、axios、element-ui、iGis、Echarts、websocket、webpack',
             ]
           },
           {
             time: '2015.04 - 2017.05',
             project: '南瑞集团人资管理系统',
-            position: '前端开发工程师',
+            position: 'web开发工程师',
             desc: '南瑞集团人资管理系统',
             technicals: [
-              '参与前端，后端的代码编写',
-              '实现Excel、Word文件上传、下载、导入、导出等功能'
+              'javascript、css、html、Echarts、jQuery、bootstrap、java、sql',
             ]
           }
         ]

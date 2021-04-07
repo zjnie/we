@@ -47,7 +47,7 @@
     .face {
       position: relative;
       height: 100%;
-      // animation: faces 5s infinite linear;
+      animation: faces 5s infinite linear;
       transform-style: preserve-3d;
       -webkit-perspective: 1500;
       -webkit-perspective-origin: 0 -150%;

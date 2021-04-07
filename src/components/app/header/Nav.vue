@@ -21,7 +21,6 @@
           { name: 'Demo', path: '/demo' },
           { name: '文章', path: '/article' },
           { name: '日志分析', path: '/log' },
-          { name: '编辑器', path: '/edit' },
           { name: '简历', path: '/resume' }
         ]
       }

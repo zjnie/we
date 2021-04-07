@@ -118,7 +118,6 @@
 <style lang="stylus" scoped>
 	.log {
 		width: 1200px;
-		height: 300px;
 		margin: 0 auto;
 		
 		.header {

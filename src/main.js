@@ -22,7 +22,3 @@ new Vue({
   store,
   render: h => h(App)
 }).$mount('#app')
-
-
-let loader = require('@libs/loader.js')
-console.log(loader)
