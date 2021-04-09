@@ -126,4 +126,4 @@ class _Promise {
 }
 
 export default _Promise
-
+export const a = 11

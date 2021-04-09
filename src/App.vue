@@ -2,9 +2,7 @@
   <div id="app" v-cloak>
     <Header />
     <!--<Banner/>-->
-    <vue-scroll>
       <router-view class="router-view" />
-    </vue-scroll>
     <Background ref="background" />
   </div>
 </template>

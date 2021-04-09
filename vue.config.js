@@ -2,13 +2,7 @@ const path = require('path')
 
 module.exports = {
 	publicPath: './',
-  pages: {
-	  main: {
-	    entry: 'src/main.js',
-      template: 'public/index.html',
-      filename: 'index.html'
-    }
-  },
+  configureWebpack: {},
   chainWebpack: config => {
     config.resolve.alias.set('@components', path.join(__dirname, 'src/components'))
     config.resolve.alias.set('@assets', path.join(__dirname, 'src/assets'))

@@ -29,7 +29,7 @@
     align-items: center;
     height: 60px;
     box-shadow: 0 4px 15px rgba(0,0,0,.08);
-    background-color: rgba(255,255,255,.5);
+    background-color: rgb(255,255,255);
     z-index: 999;
     
     .nav {
