@@ -39,6 +39,6 @@
     width: 900px;
     margin: 30px auto;
     padding: 20px 30px;
-    
+    color: $primary-color;
   }
 </style>
