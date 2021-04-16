@@ -45,7 +45,6 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    color: $primary-color;
     
     .header {
       flex-shrink: 0;

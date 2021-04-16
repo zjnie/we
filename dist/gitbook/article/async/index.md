@@ -1,18 +1,6 @@
-
-async function fn() {
-  console.log(0)
-  const a = await Promise.resolve(23)
-  console.log(a)
-  await 2
-  console.log(3)
-  return 5
-}
-
-
-console.log(fn().then(res => {
-  console.log(res)
-}))
-
+# async函数的实现
+```
+// 编译前
 function* fn() {
   console.log(0)
   const a = yield Promise.resolve(23)
@@ -22,8 +10,8 @@ function* fn() {
   return 5
 }
 
+// 编译后
 function async(fn) {
-  
   return new Promise(resolve => {
     let it = fn()
     run(it.next())
@@ -46,7 +34,10 @@ function async(fn) {
   })
 }
 
+// 示例
 let result = async(fn)
 result.then(res => {
   console.log(res)
 })
+
+```

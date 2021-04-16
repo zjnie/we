@@ -9,8 +9,8 @@ module.exports = {
     config.resolve.alias.set('@libs', path.join(__dirname, 'src/libs'))
    // console.log( config.module.rule('stylus').oneOf('vue').uses)
     //config.module.rule('stylus').oneOf('vue').use('stylus-loader').loader('shin-loader').end()
-    // config.module.rule('stylus').oneOf('vue').use('vue-style-loader').loader('style-loader').options({attributes: {shinmark: true}})
-    // config.module.rule('stylus').oneOf('normal').use('vue-style-loader').loader('style-loader').options({attributes: {shinmark: true}})
+    config.module.rule('stylus').oneOf('vue').use('vue-style-loader').loader('style-loader').options({attributes: {shinmark: true}})
+    config.module.rule('stylus').oneOf('normal').use('vue-style-loader').loader('style-loader').options({attributes: {shinmark: true}})
   },
   css: {
     loaderOptions: {
@@ -18,7 +18,7 @@ module.exports = {
         import: path.join(__dirname, 'src/styles/variable.styl')
       }
     },
-    extract: true
+    extract: false
   },
   productionSourceMap: false,
   devServer: {
