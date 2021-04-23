@@ -20,7 +20,7 @@
     provide() {
       return {
         changeBackground: this.changeBackground,
-        monitor: new Monitor(Vue)
+      //  monitor: new Monitor(Vue)
       }
     },
     data() {

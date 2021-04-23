@@ -3,8 +3,8 @@
     <div class="container">
       <Base />
       <Skill />
-      <Job />
       <Project />
+      <Job />
       <Education />
       <Evaluate />
     </div>
