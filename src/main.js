@@ -24,3 +24,4 @@ new Vue({
 }).$mount('#app')
 1
 2
+3
