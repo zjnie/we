@@ -23,3 +23,4 @@ new Vue({
   render: h => h(App)
 }).$mount('#app')
 11
+22
