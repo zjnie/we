@@ -23,9 +23,9 @@
       return {
         infos: [
           { label: '姓名', value: '聂正杰', icon: 'we-xinming' },
-          { label: '民族', value: '汉', icon: 'we-minzu' },
-          { label: '电话', value: '18114493356', icon: 'we-dianhua' },
           { label: '性别', value: '男', icon: 'we-xinbie' },
+          { label: '电话', value: '18114493356', icon: 'we-dianhua' },
+          { label: '学历', value: '专科', icon: 'we-minzu' },
           { label: '籍贯', value: '安徽滁州', icon: 'we-jiguan' },
           { label: '邮箱', value: '347835755@qq.com', icon: 'we-youxiang' },
           { label: '年龄', value: '28', icon: 'we-nianling' },
