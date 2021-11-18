@@ -1,8 +1,9 @@
 <template>
   <div class="demo">
  <!--   <ImageWall />-->
-<!--    <Cube/>-->
-    <ThreeJs />
+ <!--   <Cube/>-->
+<!--    <ThreeJs />-->
+    <FrameRender />
   </div>
 </template>
 
@@ -13,6 +14,7 @@
       ImageWall: () => import('@components/demo/ImageWall.vue'),
       Cube: () => import('@components/demo/Cube.vue'),
       ThreeJs: () => import('@components/demo/ThreeJs.vue'),
+      FrameRender: () => import('@components/demo/FrameRender.vue'),
     },
     data() {
       return {
