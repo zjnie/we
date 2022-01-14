@@ -22,25 +22,3 @@ new Vue({
   store,
   render: h => h(App)
 }).$mount('#app')
-
-for (let i = 0; i < 100; i++) {
-  setTimeout(() => {
-    for (let i = 0; i < 100; i++) {
-      console.log(i)
-    }
-  })
-}
-
-let prev = Date.now()
-let now = 0
-function animate() {
-  now = Date.now()
-  console.log('requestAnimationFrame:' + (now - prev))
-  prev = now
-  requestAnimationFrame(() => {
-    animate()
-  })
-}
-
-animate()
-
