@@ -24,7 +24,7 @@
           '熟悉基于Vue的服务器渲染，能够搭建具有热更新功能的开发框架',
           '熟悉使用uni-app进行移动端开发',
           '熟悉关于Http协议相关内容',
-          '熟悉使用canvas进行图形绘制，配合requestAnimationFrame实现动画效果',
+          '熟悉使用canvas进行图形绘制，熟练使用konva.js实现适用于web/移动端的canvas图形绘制',
           '熟练使用markdown编写技术文档，gitbook构建个人文档网站，通过nodeppt编写培训文档',
           '了解web常见安全问题，如XSS、DDOS、CSRF等',
           '了解常见的web性能优化方式',

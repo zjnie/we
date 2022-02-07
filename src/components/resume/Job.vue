@@ -24,7 +24,7 @@
       return {
         data: [
           {
-            time: '2020.01 - 至今',
+            time: '2020.01 - 2021.11',
             company: '江苏金智教育信息股份有限公司',
             position: '前端开发工程师',
             dutys: [
