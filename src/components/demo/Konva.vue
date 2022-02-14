@@ -22,10 +22,10 @@
 		    x: 120,
 		    y: 120,
         offset: {
-		    	x: -50,
-          y: -50
+		    	x: 0,
+          y: 0
         },
-		    rotation: 90,
+		    rotation: 180,
 		    width: 100,
 		    height: 50,
 		    fill: 'green',
@@ -42,6 +42,7 @@
 			    x: -50,
 			    y: -50
 		    },
+		    rotation: 5,
 		    width: 100,
 		    height: 50,
 		    fill: 'green',
