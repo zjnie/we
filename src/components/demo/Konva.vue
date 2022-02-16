@@ -9,7 +9,8 @@
 		data() {
 			return {}
 		},
-    mounted() {
+    async mounted() {
+			
 	    const stage = new Konva.Stage({
 		    container: this.$el,
 		    width: 500,
@@ -25,40 +26,26 @@
 		    	x: 0,
           y: 0
         },
-		    rotation: 180,
 		    width: 100,
 		    height: 50,
-		    fill: 'green',
+		    fill: 'tan',
 		    stroke: 'black',
-		    strokeWidth: 4,
-		    draggable: true
+		    strokeWidth: -10,
+		    draggable: true,
+        listening: true,
+		    strokeEnabled: true,
+		    strokeHitEnabled: true
 	    });
 	    layer.add(rect);
 	    stage.add(layer)
-	    const rect1 = new Konva.Rect({
-		    x: 120,
-		    y: 120,
-		    offset: {
-			    x: -50,
-			    y: -50
-		    },
-		    rotation: 5,
-		    width: 100,
-		    height: 50,
-		    fill: 'green',
-		    stroke: 'black',
-		    strokeWidth: 4,
-		    draggable: true
-	    });
-	    layer.add(rect1);
 	    const rect3 = new Konva.Rect({
-		    x: 120,
+		    x: 223,
 		    y: 120,
 		    width: 100,
 		    height: 50,
 		    fill: 'green',
 		    stroke: 'black',
-		    strokeWidth: 4,
+		    strokeWidth: 0,
 		    draggable: true
 	    });
 	    layer.add(rect3);
