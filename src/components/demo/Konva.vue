@@ -29,8 +29,6 @@
 		    width: 100,
 		    height: 50,
 		    fill: 'tan',
-		    stroke: 'black',
-		    strokeWidth: -10,
 		    draggable: true,
         listening: true,
 		    strokeEnabled: true,
@@ -39,16 +37,31 @@
 	    layer.add(rect);
 	    stage.add(layer)
 	    const rect3 = new Konva.Rect({
-		    x: 223,
+		    x: 180,
 		    y: 120,
 		    width: 100,
 		    height: 50,
-		    fill: 'green',
+		    fill: 'rgba(0, 0, 0, 0)',
 		    stroke: 'black',
-		    strokeWidth: 0,
-		    draggable: true
+		    draggable: true,
+		    strokeWidth: 1,
+        dash: [2, 2],
+        lineJoin: 20
 	    });
 	    layer.add(rect3);
+	
+	    let text = new Konva.Text({
+		    x: 10,
+		    y: 15,
+        width: 30,
+		    text: '人员12',
+        align: 'center',
+		    fontSize: 20,
+		    fill: 'green',
+        wrap: 'word'
+	    })
+	    console.log(text.height())
+	    layer.add(text)
     }
 	}
 </script>
