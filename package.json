@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "dev": "vue-cli-service serve",
+    "dev": "../node_modules/.bin/vue-cli-service serve",
     "build": "vue-cli-service build",
     "dev2": "node ./vue.config.js"
   },
