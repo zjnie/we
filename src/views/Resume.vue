@@ -6,7 +6,7 @@
       <Project />
       <Job />
       <Education />
-      <Evaluate />
+<!--      <Evaluate />-->
     </div>
   </div>
 </template>

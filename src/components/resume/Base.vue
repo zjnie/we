@@ -1,10 +1,12 @@
 <template>
   <div class="base">
-    <div class="header">
-      <span class="name">PERSONAL RESUME</span>
-      <span class="split">--</span>
-      <span class="tip">一直在努力，从未停止过</span>
+    <div class="header" style="text-align: center">
+<!--      <span class="name">PERSONAL RESUME</span>-->
+<!--      <span class="name">个人简历</span>-->
+<!--      <span class="split">&#45;&#45;</span>-->
+<!--      <span class="tip">一直在努力，从未停止过</span>-->
     </div>
+		<ColumnHeader title="基本信息" icon="we-xinming" />
     <div class="info">
       <div v-for="info in infos" :key="info.value" class="info-item">
         <i :class="['we', info.icon]"></i>
@@ -25,7 +27,7 @@
           { label: '姓名', value: '聂正杰', icon: 'we-xinming' },
           { label: '性别', value: '男', icon: 'we-xinbie' },
           { label: '电话', value: '18114493356', icon: 'we-dianhua' },
-          { label: '学历', value: '专科', icon: 'we-minzu' },
+          { label: '学历', value: '本科', icon: 'we-minzu' },
           { label: '籍贯', value: '安徽滁州', icon: 'we-jiguan' },
           { label: '邮箱', value: '347835755@qq.com', icon: 'we-youxiang' },
           { label: '年龄', value: '29', icon: 'we-nianling' },

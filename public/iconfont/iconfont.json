@@ -6,6 +6,13 @@
   "description": "个人网站",
   "glyphs": [
     {
+      "icon_id": "16513290",
+      "name": "人员信息",
+      "font_class": "renyuanxinxi",
+      "unicode": "e671",
+      "unicode_decimal": 58993
+    },
+    {
       "icon_id": "993792",
       "name": "项目编号",
       "font_class": "xiangmu",
