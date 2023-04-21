@@ -12,10 +12,10 @@
   export default {
     name: 'Demo',
     components: {
-      ImageWall: () => import('@components/demo/ImageWall.vue'),
-      Cube: () => import('@components/demo/Cube.vue'),
-      ThreeJs: () => import('@components/demo/ThreeJs.vue'),
-      FrameRender: () => import('@components/demo/FrameRender.vue'),
+      // ImageWall: () => import('@components/demo/ImageWall.vue'),
+      // Cube: () => import('@components/demo/Cube.vue'),
+      // ThreeJs: () => import('@components/demo/ThreeJs.vue'),
+      // FrameRender: () => import('@components/demo/FrameRender.vue'),
 	    Konva: () => import('@components/demo/Konva.vue'),
     },
     data() {

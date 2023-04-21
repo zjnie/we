@@ -15,7 +15,7 @@
           <div class="work-desc">
             <div v-for="desc in item.workDescs" :key="desc" class="desc-item list-prefix">{{ desc }}</div>
           </div>
-          <label class="label">技术架构：</label>
+          <label v-if="item.technicals.length" class="label">技术架构：</label>
           <div v-for="technical in item.technicals" :key="technical" class="technical-item list-prefix">{{ technical }}</div>
         </div>
       </div>
@@ -29,8 +29,14 @@
     data() {
       return {
         data: [
+          {
+            time: '2022.05 - 至今',
+            project: '教工项目',
+            position: '前端架构',
+            portalDesc: '负责新项目技术选型、项目框架搭建、公共功能开发、公共组件封装及疑难问题解决'
+          },
 	        {
-		        time: '2021.11 - 至今',
+		        time: '2021.11 - 2022.05',
 		        project: '慧排',
 		        position: '前端开发工程师',
 		        portalDesc: '智能生成会议室，满足各种会议室布局排列需求，让排座一键无忧，让落座更加惬意，让会议更加高级',

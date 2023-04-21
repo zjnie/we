@@ -3,7 +3,7 @@
     <ColumnHeader title="教育背景" icon="we-jiaoyu" />
     <div class="info">
       <div v-for="item in data" :key="item.time" class="info-item">
-        <span class="time">{{ item.time }}</span>
+       <!-- <span class="time">{{ item.time }}</span>-->
         <span class="school">{{ item.school }}</span>
         <span class="major">{{ item.major }}</span>
       </div>
@@ -17,8 +17,8 @@
     data() {
       return {
         data: [
-         // { time: '2019.03 - 2021.07', school: '南京信息职业技术学院', major: '计算机科学与计算' }
-          { time: '2011.09 - 2015.06', school: '江淮学院', major: '计算机科学与计算' }
+          { school: '南京信息职业技术学院', major: '计算机科学与计算' }
+         // { time: '2011.09 - 2015.06', school: '江淮学院', major: '计算机科学与计算' }
         ]
       }
     }

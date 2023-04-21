@@ -14,7 +14,7 @@
         <span class="value">{{ info.value }}</span>
       </div>
     </div>
-    <img class="photo" :src="photoSrc" />
+    <!--<img class="photo" :src="photoSrc" />-->
   </div>
 </template>
 
@@ -25,14 +25,14 @@
       return {
         infos: [
           { label: '姓名', value: '聂正杰', icon: 'we-xinming' },
-          { label: '性别', value: '男', icon: 'we-xinbie' },
+          { label: '学校', value: '南京信息职业技术学院', icon: 'we-jiguan' },
           { label: '电话', value: '18114493356', icon: 'we-dianhua' },
-          { label: '学历', value: '本科', icon: 'we-minzu' },
-          { label: '籍贯', value: '安徽滁州', icon: 'we-jiguan' },
+          { label: '性别', value: '男', icon: 'we-xinbie' },
+          { label: '专业', value: '计算机科学与技术', icon: 'we-xianju' },
           { label: '邮箱', value: '347835755@qq.com', icon: 'we-youxiang' },
-          { label: '年龄', value: '29', icon: 'we-nianling' },
-          { label: '现居', value: '江苏南京', icon: 'we-xianju' },
-          { label: '意向', value: '前端开发工程师', icon: 'we-yixiang' }
+          { label: '年龄', value: '30', icon: 'we-nianling' },
+          { label: '学历', value: '专科', icon: 'we-minzu' },
+          { label: '现居', value: '江苏南京', icon: 'we-yixiang' }
         ],
         photoSrc: require('@assets/resume/photo.jpg')
       }
@@ -43,7 +43,7 @@
 <style lang="stylus" scoped>
   .base {
     position: relative;
-    padding-right: 200px;
+    /*padding-right: 200px;*/
   }
   
   .header {

@@ -5,7 +5,7 @@
       <Skill />
       <Project />
       <Job />
-      <Education />
+     <!-- <Education />-->
 <!--      <Evaluate />-->
     </div>
   </div>
