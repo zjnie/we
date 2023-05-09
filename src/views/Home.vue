@@ -44,8 +44,8 @@
 </script>
 <style lang="stylus" scoped>
   .home {
-    width: 1200px;
-    margin: 0 auto;
+    width: 100%;
+    padding: calc(50% - 600px);
   }
   .intro {
     position: relative;

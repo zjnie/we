@@ -22,8 +22,10 @@ module.exports = {
   },
   productionSourceMap: false,
   devServer: {
-    inline: false,
     hot: true,
-    port: 9000
+    port: 9000,
+    headers: {
+      'Acess-Control-Allow-Origin': '*'
+    }
   }
 }

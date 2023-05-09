@@ -4,7 +4,8 @@
  <!--   <Cube/>-->
 <!--    <ThreeJs />-->
 <!--    <FrameRender />-->
-    <Konva />
+<!--    <Konva />-->
+    <Canvas></Canvas>
   </div>
 </template>
 
@@ -17,6 +18,7 @@
       // ThreeJs: () => import('@components/demo/ThreeJs.vue'),
       // FrameRender: () => import('@components/demo/FrameRender.vue'),
 	    Konva: () => import('@components/demo/Konva.vue'),
+	    Canvas: () => import('@components/demo/Canvas.vue'),
     },
     data() {
       return {
@@ -45,6 +47,5 @@
 
 <style lang="stylus" scoped>
   .demo {
-  
   }
 </style>

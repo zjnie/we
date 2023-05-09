@@ -53,9 +53,10 @@
     .banner {
       flex-shrink: 0;
     }
-    
-    & >>> .__vuescroll {
-      flex-grow: 1;
-    }
+  }
+  
+  .router-view {
+    flex-grow: 1;
+    overflow: auto;
   }
 </style>
