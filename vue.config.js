@@ -1,4 +1,9 @@
 const path = require('path')
+const fs = require('fs')
+
+const a = fs.existsSync('./package.json')
+
+console.log(a)
 
 module.exports = {
 	publicPath: './',

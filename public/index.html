@@ -7,8 +7,24 @@
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title><%= htmlWebpackPlugin.options.title %></title>
     <link rel="stylesheet" href="./iconfont/iconfont.css">
+    <link rel="stylesheet" href="./css/bundle.css">
+    <script src="./js/bundle.min.js"></script>
   </head>
   <body>
     <div id="app"></div>
   </body>
+  <script>
+    var a = function(d) {
+    d()
+    }
+    
+    var b = {
+      b: 2,
+      c: function() {
+        console.log(this)
+      }
+    }
+
+    b.c()
+  </script>
 </html>

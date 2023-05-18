@@ -5,7 +5,8 @@
 <!--    <ThreeJs />-->
 <!--    <FrameRender />-->
 <!--    <Konva />-->
-    <Canvas></Canvas>
+   <!-- <Canvas></Canvas>-->
+    <Map></Map>
   </div>
 </template>
 
@@ -19,6 +20,7 @@
       // FrameRender: () => import('@components/demo/FrameRender.vue'),
 	    Konva: () => import('@components/demo/Konva.vue'),
 	    Canvas: () => import('@components/demo/Canvas.vue'),
+      Map: () => import('@components/demo/Map.vue'),
     },
     data() {
       return {

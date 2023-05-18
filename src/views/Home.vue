@@ -20,7 +20,9 @@
   export default {
     name: 'Home',
     data() {
-      return {}
+      return {
+        mm: false
+      }
     },
     mounted() {
       const callback = function(entries) {
